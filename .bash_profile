@@ -1,16 +1,8 @@
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
-
-alias ll="ls -flagh"
+alias ll="ls -lagh"
 alias l="ll"
 
-if [ -e /Applications/Mou.app ]; then
-  alias mou="open /Applications/Mou.app"
-fi
-
 export EDITOR=vim
-export PS1="\[\e[33m\]\W\[\e[m\] \$ "
+export PS1="[\u] \[\e[33m\]\W\[\e[m\] \$ "
 
 export PATH=~/code/medium/internal/scripts:$PATH
 export PATH=/usr/local/bin:$PATH
