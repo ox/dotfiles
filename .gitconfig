@@ -1,0 +1,19 @@
+[user]
+	name = ArtemTitoulenko
+	email = artem.titoulenko@gmail.com
+[alias]
+	st = status
+	co = checkout
+	br = branch
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  le = log --oneline --decorate
+
+  filelog = log -u
+  fl = log -u
+[color]
+	ui = true
+[core]
+	autocrlf = input
