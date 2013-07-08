@@ -1,5 +1,7 @@
 execute pathogen#infect()
 
+" lol comment
+
 syntax on
 set nocompatible  " Use Vim settings, rather then Vi settings
 set nobackup
@@ -45,6 +47,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " For Makefiles
 autocmd FileType make setlocal noexpandtab
+
+" For json
+autocmd FileType json setlocal ft=javascript
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
@@ -100,3 +105,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
+
+""
+"" CtrlP Settings
+""
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'

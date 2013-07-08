@@ -26,3 +26,4 @@ task :uninstall, :path do |t, path|
     File.unlink(dest) if File.exists? dest
   end
 end
+
