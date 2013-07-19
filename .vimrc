@@ -37,6 +37,7 @@ set tabstop=2 " Softtabs, 2 spaces
 set shiftwidth=2
 set expandtab
 set mouse=a
+set ttimeoutlen=50
 
 " Colorschemes
 set t_Co=256
@@ -87,6 +88,17 @@ nnoremap <C-Down> <C-w>j
 nnoremap <C-Left> <C-w>h
 nnoremap <C-Up> <C-w>k
 nnoremap <C-Right> <C-w>l
+
+""
+"" airline settings
+""
+
+let g:airline_theme='simple'
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_right_sep = '«'
+let g:airline_fugitive_prefix = '⎇ '
+let g:airline_paste_symbol = 'ρ'
 
 
 ""
