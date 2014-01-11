@@ -13,7 +13,6 @@ export PATH=${GOPATH//://bin:}/bin:$PATH
 export PATH=~/code/tools/arcanist/bin:$PATH
 source ~/code/tools/arcanist/resources/shell/bash-completion
 
-[[ -e $(which impromptu) ]] && source impromptu # load impromptu (npm install -g impromptu)
 alias bd=". bd -s"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
