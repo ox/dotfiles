@@ -4,14 +4,10 @@ alias l="ll"
 export EDITOR=vim
 export PS1="\[\e[33m\]\W\[\e[m\] \$ "
 
-export PATH=~/code/medium/internal/scripts:$PATH
+# export PATH=~/code/medium/internal/scripts:$PATH
 export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/share/npm/bin:$PATH
-export GOPATH=~/code/go/workspace:~/code/branded/go
+export GOPATH=~/code/go
 export PATH=${GOPATH//://bin:}/bin:$PATH
-
-export PATH=~/code/tools/arcanist/bin:$PATH
-source ~/code/tools/arcanist/resources/shell/bash-completion
 
 alias bd=". bd -s"
 
