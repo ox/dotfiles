@@ -2,6 +2,7 @@ execute pathogen#infect()
 
 " lol comment
 
+filetype off
 syntax on
 set nocompatible  " Use Vim settings, rather then Vi settings
 set nobackup
@@ -98,6 +99,13 @@ nnoremap <C-Down> <C-w>j
 nnoremap <C-Left> <C-w>h
 nnoremap <C-Up> <C-w>k
 nnoremap <C-Right> <C-w>l
+
+" Go Stuff
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
 
 ""
 "" airline settings
